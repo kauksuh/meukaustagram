@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kaustagram</title>
+  </head>
+  <body>
+    <a class="mensagem"> opa, bem vindo ao meu site de teste muito lindo.</a>
+
+    <div class="imagens">
+      <img src="img/celular.png" class="img-celular" />
+      <img src="img/insta2-foda.png" class="instafoda um" />
+      <img src="img/insta1-1.png" class="instafoda dois" />
+      <img src="img/instapenas.png" class="instafoda cinco" />
+    </div>
+
+    <div class="container">
+      <img src="img/kaustagram.png" class="img-insta" />
+
+      <input placeholder="funciona não, é só teste" />
+      <input placeholder="mas ficou lindo, concordas?" />
+
+      <button>Acessar</button>
+
+      <a class="card">aproveita e segue eu lá no insta👇</a>
+      <a class="cpf">kusizz</a>
+    </div>
+  </body>
+  <script>
+    let enozes = document.querySelector(".cinco");
+
+    setInterval(function () {
+      if (enozes.style.opacity == 1) {
+        enozes.style.opacity = 0;
+      } else {
+        enozes.style.opacity = 1;
+      }
+    }, 3200);
+
+    let sinozes = document.querySelector(".dois");
+
+    setInterval(function () {
+      if (sinozes.style.opacity == 1) {
+        sinozes.style.opacity = 0;
+      } else {
+        sinozes.style.opacity = 1;
+      }
+    }, 2500);
+  </script>
+</html>
